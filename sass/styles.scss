@@ -60,6 +60,7 @@ body {
     }
     @include min {
         max-width: 380px;
+	    padding: 0 3%;
     }
 }
 section:nth-child(odd) {
@@ -92,6 +93,7 @@ section:nth-child(odd) {
 .logo {
     &__inner {
     display: flex;
+    padding: 4% 0;
     font-size: 3.6rem;
     font-family: 'Merriweather', serif;
     }
@@ -224,7 +226,10 @@ section:nth-child(odd) {
     font-size: 18px;
     &:hover {
         background: #0687e4;
-}
+	}
+	@include min {
+		padding: 20px 40px;
+	}
 }
 .to-top {
     position: fixed;
@@ -370,6 +375,9 @@ section:nth-child(odd) {
     height: 670px;
     &__content {
         padding-top: 17rem;
+	    @include min {
+		    padding-top: 8rem;
+	    }
     }
     &__slide1 {
         background: url(../img/banner-cover.png);
@@ -532,6 +540,9 @@ section:nth-child(odd) {
     &__item {
         padding: 4.5rem 9.5rem;
         background: $light-gray;
+	    @include min {
+		    padding: 2rem;
+	    }
     }
     &__text {
         font-weight: 300;
