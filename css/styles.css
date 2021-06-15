@@ -37,14 +37,14 @@ body {
       max-width: 950px; } }
   @media (max-width: 991px) {
     .container {
-      max-width: 780px; } }
+      max-width: 780px;
+      padding: 0 3%; } }
   @media (max-width: 767px) {
     .container {
       max-width: 650px; } }
   @media (max-width: 480px) {
     .container {
-      max-width: 380px;
-      padding: 0 3%; } }
+      max-width: 380px; } }
 
 section:nth-child(odd) {
   background-color: #EBEBEB; }
@@ -164,7 +164,7 @@ section:nth-child(odd) {
       font-size: 3.8rem; } }
   @media (max-width: 480px) {
     .title {
-      font-size: 3rem; } }
+      font-size: 3.3rem; } }
 
 .section__title {
   margin: 3rem 0 8.5rem; }
@@ -236,7 +236,11 @@ section:nth-child(odd) {
   .banner .title {
     color: white;
     margin-top: 0;
-    max-width: 45vw; }
+    width: 589px;
+    max-width: 50vw; }
+    @media (max-width: 767px) {
+      .banner .title {
+        max-width: 70vw; } }
 
 .swiper-container {
   height: 100%; }
@@ -308,6 +312,8 @@ section:nth-child(odd) {
     @media (max-width: 480px) {
       .intro__content {
         padding-top: 8rem; } }
+  .intro__title {
+    margin-bottom: 6%; }
   .intro__slide1 {
     background: url(../img/banner-cover.png); }
   .intro__slide2 {
@@ -385,9 +391,8 @@ section:nth-child(odd) {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      padding: 3rem 4rem 4rem;
+      padding: 3rem 8rem 4rem 4rem;
       background: #EBEBEB;
-      font-size: 1em;
       font-weight: 700;
       transition: 0.2s ease-in-out; }
       .about__cards-item:hover {
@@ -409,7 +414,8 @@ section:nth-child(odd) {
     text-decoration-line: underline;
     color: #005FA3;
     text-underline-position: under;
-    text-decoration-thickness: 2px; }
+    text-decoration-thickness: 2px;
+    font-size: 1.4rem; }
 
 .clients {
   padding: 10rem 0 21rem; }

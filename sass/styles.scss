@@ -53,6 +53,7 @@ body {
     }
     @include md {
         max-width: 780px;
+        padding: 0 3%;
     }
     @include sm {
         max-width: 650px;
@@ -60,7 +61,6 @@ body {
     }
     @include min {
         max-width: 380px;
-	    padding: 0 3%;
     }
 }
 section:nth-child(odd) {
@@ -199,7 +199,7 @@ section:nth-child(odd) {
         font-size: 3.8rem;
     }
     @include min {
-        font-size: 3rem;
+        font-size: 3.3rem;
     }
 }
 .section__title {
@@ -285,7 +285,11 @@ section:nth-child(odd) {
     .title {
         color: white;
         margin-top: 0;
-        max-width: 45vw;
+        width: 589px;
+        max-width: 50vw;
+        @include sm {
+            max-width: 70vw;
+        }
     }
 }
 .swiper-container {
@@ -381,6 +385,9 @@ section:nth-child(odd) {
 		    padding-top: 8rem;
 	    }
     }
+    &__title {
+        margin-bottom: 6%;
+    }
     &__slide1 {
         background: url(../img/banner-cover.png);
     }
@@ -473,9 +480,8 @@ section:nth-child(odd) {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            padding: 3rem 4rem 4rem;
+            padding: 3rem 8rem 4rem 4rem;
             background: $light-gray;
-            font-size: 1em;
             font-weight: 700;
             transition: 0.2s ease-in-out;
             &:hover {
@@ -497,7 +503,7 @@ section:nth-child(odd) {
         }
     }
     &__text {
-	font-size: 1.4rem;
+        font-size: 1.4rem;
         font-weight: 700;
     }
     &__link {
@@ -505,6 +511,7 @@ section:nth-child(odd) {
         color: $accent-color;
         text-underline-position: under;
         text-decoration-thickness: 2px;
+        font-size: 1.4rem;
     }
 
 
