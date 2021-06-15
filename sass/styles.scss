@@ -115,7 +115,7 @@ section:nth-child(odd) {
 }
 
 .menu {
-    padding-bottom: 3%;
+    padding-bottom: 2.7%;
     padding-top: 2.2%;
     &__inner {
     display: flex;
@@ -136,7 +136,7 @@ section:nth-child(odd) {
 }
 &__contacts {
     justify-content: space-between;
-    margin-bottom: 3.5%;
+    margin-bottom: 3%;
     font-size: 1.3rem;
     @include sm {
         font-size: 1.8rem;
@@ -203,7 +203,7 @@ section:nth-child(odd) {
     }
 }
 .section__title {
-    margin: 4rem 0 6.6rem;
+    margin: 3rem 0 8.5rem;
 }
 
 .link {
@@ -303,7 +303,7 @@ section:nth-child(odd) {
     }
 
 &-ctrl {
-    bottom: 3rem;
+    bottom: 9rem;
     position: absolute;
     z-index: 5;
     width: 100%;
@@ -312,6 +312,8 @@ section:nth-child(odd) {
     &__inner {
         display: flex;
         justify-content: space-between;
+	align-items: center;
+	padding: 0 3px;
     }
     .slider-ctrl__bullets {
         position: static;
@@ -322,9 +324,9 @@ section:nth-child(odd) {
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
 	display: inline-block;
-	height: 12px;
-    margin: 25px 12px 0 16px;
-	width: 12px;
+	height: 10px;
+        margin-right: 4rem;
+	width: 10px;
 	border-radius: 50%;
     &_active {
         background: white;
@@ -440,7 +442,7 @@ section:nth-child(odd) {
         }
     }
     &__title {
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
         & span {
             color: $accent-color;
         }
@@ -449,11 +451,13 @@ section:nth-child(odd) {
         margin: 0;
         max-width: 45rem;
         font-weight: 300;
+	line-height: 25px;
     }
     &__cards {
         display: grid;
         grid-template-columns: repeat(2, 25rem);
-        grid-gap: 3rem;
+        grid-gap: 4rem;
+	margin-top: 2.5rem;
         @include max {
             margin-left: 5%;
         }
@@ -493,6 +497,7 @@ section:nth-child(odd) {
         }
     }
     &__text {
+	font-size: 1.4rem;
         font-weight: 700;
     }
     &__link {
