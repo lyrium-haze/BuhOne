@@ -13,7 +13,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
- <body>
+ <body class="page">
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -26,13 +26,13 @@
             <nav class="menu">
                 <div class="menu__inner">
                     <ul class="menu__contacts">
-                        <li class="menu__contacts-item"> <img src="img/number.svg" alt="phone">
+                        <li class="menu__contacts-item menu__contacts-item_number">
                             8 (111) 222-33-44</li>
-                        <li class="menu__contacts-item"> <img src="img/time.svg" alt="hours">
+                        <li class="menu__contacts-item menu__contacts-item_hours">
                             Пн-Пт 10:00-18:00</li>
-                        <li class="menu__contacts-item"> <img src="img/mail.svg" alt="mail">
+                        <li class="menu__contacts-item menu__contacts-item_mail">
                             order@buhone.ru</li>
-                        <li class="menu__contacts-item"> <img src="img/geo.svg" alt="adress">
+                        <li class="menu__contacts-item menu__contacts-item_adress">
                             Невский пр. 130</li>
                     </ul>
                 <ul class="menu__list">
@@ -43,7 +43,7 @@
                      <a  class="link" href="#services"> Услуги </a>
                     </li>
                     <li class="menu__list-item">
-                      <a class="link" href="#rewiew"> Кейсы </a>
+                      <a class="link" href="#review"> Кейсы </a>
                     </li>
                     <li class="menu__list-item">
                       <a class="link" href="#about"> О компании </a>
@@ -60,7 +60,7 @@
         </div>
         </div>
     </header>
-
+    <main class="main">
     <section class="intro banner">
         <div class="slider">
             <div class="swiper-container intro__swiper-container">
@@ -93,7 +93,7 @@
                     <div class="intro__slide4 slider__slide swiper-slide">
                         <div class="container">
                         <div class="intro__content">
-                    <h1 class="title itro__title"> Illum consequuntur expedita corrupti </h1>
+                    <h1 class="title intro__title"> Illum consequuntur expedita corrupti </h1>
                         <button class="btn"> Наша презентация </button>
                         </div>
                         </div>
@@ -113,7 +113,6 @@
                         </div>
                         </div>
                     </div>
-                    </div>
                 </section>
 
     <section id="services" class="services">
@@ -121,9 +120,9 @@
             <div class="services__inner">
                 <div class="section-info">
             <div class="pre-title">Наши услуги</div>
-            <div class="title section__title">
+            <h2 class="title section__title">
                 Мы специализируемся
-            </div>
+            </h2>
             </div>
             <div class="services__grid">
                 <div class="services__grid-item">
@@ -160,9 +159,9 @@
                 <div class="about-info">
                     <div class="section-info_center">
                     <div class="pre-title">О нас</div>
-                    <div class="title section__title about__title">
+                    <h2 class="title section__title about__title">
                         Компания <span> ИвановПром </span>
-                    </div>
+                    </h2>
                     </div>
             <p class="about__info-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
         </div>
@@ -194,18 +193,16 @@
         </div>
     </div>
     </div>
-    </div>
-    </div>
     </section>
 
     <section id="clients" class="clients">
         <div class="container">
             <div class="clients__inner">
-                <div class="section-info section-info_center">
+                <div class="section-info section-info_center clients__info">
                     <div class="pre-title">Наши клиенты</div>
-                    <div class="title section__title">
+                    <h2 class="title clients__title">
                         С нами работают
-                    </div>
+                    </h2>
                 </div>
                     <div class="slider clients__slider">
                         <div class="swiper-container clients__swiper-container">
@@ -294,11 +291,11 @@
 
     <section id="review" class="review">
         <div class="container">
-            <div class="section-info">
+            <div class="section-info review__info">
                 <div class="pre-title">Отзывы</div>
-                <div class="title section__title">
+                <h2 class="title review__title">
                      Ваши благодарности
-                     </div>
+                </h2>
                     </div>
         <div class="slider review__slider">
             <div class="swiper-container review__swiper-container">
@@ -396,7 +393,7 @@
         <div class="container">
             <div class="contact__inner">
             <div class="contact__info">
-                <h1 class="title"> Связь с нами </h1>
+                <h2 class="title"> Связь с нами </h2>
                 <p class="contact__text">
                     У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!
                 </p>
@@ -410,17 +407,17 @@
             <div class="contact__contact-form-holder">
                 <form class="contact-form">
                     <div class="contact-form__item">
-                        <div class="contact-form__input-holders">Имя</div>
-                        <input class="contact-form__input" type="text" placeholder="Иван" name="firstname"
+                        <label class="contact-form__input-holders" for="firstname">Имя</label>
+                        <input id="firstname" class="contact-form__input" type="text" placeholder="Иван" name="firstname"
                          autocomplete="off"/>
                     </div>
                     <div class="contact-form__item">
-                      <div class="contact-form__input-holders">Фамилия</div>
-                      <input class="contact-form__input" type="text" placeholder="Иванов" name="lastname" autocomplete="off"/>
+                      <label class="contact-form__input-holders" for="lastname">Фамилия</label>
+                      <input id="lastname" class="contact-form__input" type="text" placeholder="Иванов" name="lastname" autocomplete="off"/>
                     </div>
                     <div class="contact-form__item">
-                      <div class="contact-form__input-holders">Сообщение</div>
-                      <input class="contact-form__input" type="text" placeholder="Ваше сообщение" name="message" autocomplete="off"/>
+                      <label class="contact-form__input-holders" for="message">Сообщение</label>
+                      <textarea id="message" class="contact-form__input" placeholder="Ваше сообщение" name="message" autocomplete="off"> </textarea>
                     </div>
             <button class="btn"> Отправить сообщение </button>
             </form>
@@ -429,8 +426,9 @@
      </div>
     </section>
 
-    <!-- <button class="btn to-top"> Наверх </button> -->
 
+</main>
+    <!-- <button class="btn to-top"> Наверх </button> -->
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
